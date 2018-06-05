@@ -1,0 +1,12 @@
+{
+"ms_vision": "39f603f96e3044b09890d903beddaba8",
+"aws_rekognition": "b395bfa14739479b8b8349a50e90c235",
+"google_vision": "AIzaSyADJekxbZXMvniPuois0ygsQelwtR5vTZM",
+"unused_keys":
+	{
+	"ms_vision":
+		[
+		"260c1b79206341648ac0f67bad147698"
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.226.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "image-type": "^3.0.0",
+    "install": "^0.10.4",
+    "jest": "^23.0.0",
+    "microsoft-computer-vision": "^0.3.3",
+    "npm": "^5.7.1",
+    "request": "^2.83.0"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  }
+}
