@@ -37,7 +37,7 @@ module.exports = function ask(img)
 				{
 				return reject({error: {err}, attention: "MUST NOT HAPPEN"});
 				console.log("MUST NOT HAPPEN")
-				})*/;
+				});*/
 			})
 		.catch((err) =>
 			{

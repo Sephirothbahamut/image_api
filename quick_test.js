@@ -47,11 +47,9 @@ function analyze_request(image_uri, company)
 		
 		});
 	}
-
+	
 console.log("==========================")
-analyze_request(img[1], "microsoft").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
-/*analyze_request(img[0], "google").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
-analyze_request(img[0], "amazon").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
+analyze(img[1], "amazon").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
 
 /*
 console.log("==========================")
