@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1528198190002" clover="3.2.0">
-  <project timestamp="1528198190002" name="All files">
-    <metrics statements="123" coveredstatements="116" conditionals="31" coveredconditionals="26" methods="37" coveredmethods="35" elements="191" coveredelements="177" complexity="0" loc="123" ncloc="123" packages="2" files="8" classes="8">
+<coverage generated="1528200554449" clover="3.2.0">
+  <project timestamp="1528200554450" name="All files">
+    <metrics statements="123" coveredstatements="117" conditionals="31" coveredconditionals="27" methods="37" coveredmethods="35" elements="191" coveredelements="179" complexity="0" loc="123" ncloc="123" packages="2" files="8" classes="8">
       <package name="API">
         <metrics statements="41" coveredstatements="41" conditionals="17" coveredconditionals="17" methods="8" coveredmethods="8"/>
         <file name="analyze.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\analyze.js">
@@ -16,7 +16,7 @@
           <line num="12" count="1" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
           <line num="18" count="14" type="stmt"/>
-          <line num="19" count="8" type="stmt"/>
+          <line num="19" count="6" type="stmt"/>
           <line num="20" count="6" type="stmt"/>
           <line num="26" count="16" type="stmt"/>
           <line num="29" count="16" type="cond" truecount="2" falsecount="0"/>
@@ -40,7 +40,7 @@
           <line num="64" count="14" type="stmt"/>
           <line num="65" count="14" type="stmt"/>
           <line num="67" count="5" type="stmt"/>
-          <line num="70" count="5" type="stmt"/>
+          <line num="70" count="4" type="stmt"/>
           <line num="78" count="11" type="cond" truecount="2" falsecount="0"/>
           <line num="80" count="10" type="stmt"/>
           <line num="82" count="5" type="stmt"/>
@@ -50,7 +50,7 @@
         </file>
       </package>
       <package name="API.api_calls">
-        <metrics statements="82" coveredstatements="75" conditionals="14" coveredconditionals="9" methods="29" coveredmethods="27"/>
+        <metrics statements="82" coveredstatements="76" conditionals="14" coveredconditionals="10" methods="29" coveredmethods="27"/>
         <file name="all.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\api_calls\all.js">
           <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
           <line num="2" count="1" type="stmt"/>
@@ -65,7 +65,7 @@
           <line num="28" count="4" type="stmt"/>
           <line num="29" count="4" type="stmt"/>
           <line num="31" count="4" type="stmt"/>
-          <line num="34" count="4" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
           <line num="44" count="4" type="stmt"/>
         </file>
         <file name="amazon.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\api_calls\amazon.js">
@@ -80,9 +80,9 @@
           <line num="20" count="7" type="stmt"/>
           <line num="22" count="7" type="stmt"/>
           <line num="30" count="7" type="stmt"/>
-          <line num="32" count="7" type="cond" truecount="1" falsecount="1"/>
+          <line num="32" count="5" type="cond" truecount="1" falsecount="1"/>
           <line num="33" count="0" type="stmt"/>
-          <line num="35" count="7" type="stmt"/>
+          <line num="35" count="5" type="stmt"/>
         </file>
         <file name="amazon_wrapper.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\api_calls\amazon_wrapper.js">
           <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
@@ -97,7 +97,7 @@
           <line num="28" count="2" type="stmt"/>
         </file>
         <file name="download.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\api_calls\download.js">
-          <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
+          <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
           <line num="2" count="1" type="stmt"/>
           <line num="3" count="1" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
@@ -105,10 +105,10 @@
           <line num="10" count="18" type="stmt"/>
           <line num="17" count="18" type="stmt"/>
           <line num="19" count="17" type="cond" truecount="2" falsecount="0"/>
-          <line num="21" count="7" type="stmt"/>
-          <line num="25" count="10" type="cond" truecount="1" falsecount="1"/>
+          <line num="21" count="4" type="stmt"/>
+          <line num="25" count="13" type="cond" truecount="2" falsecount="0"/>
           <line num="27" count="10" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
+          <line num="31" count="3" type="stmt"/>
         </file>
         <file name="google.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\api_calls\google.js">
           <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
@@ -120,11 +120,11 @@
           <line num="19" count="7" type="stmt"/>
           <line num="37" count="7" type="stmt"/>
           <line num="45" count="7" type="stmt"/>
-          <line num="47" count="7" type="cond" truecount="1" falsecount="1"/>
+          <line num="47" count="6" type="cond" truecount="1" falsecount="1"/>
           <line num="48" count="0" type="stmt"/>
-          <line num="49" count="7" type="cond" truecount="1" falsecount="1"/>
+          <line num="49" count="6" type="cond" truecount="1" falsecount="1"/>
           <line num="50" count="0" type="stmt"/>
-          <line num="53" count="7" type="stmt"/>
+          <line num="53" count="6" type="stmt"/>
         </file>
         <file name="google_wrapper.js" path="C:\Users\Sephirothbahamut\Documents\Programming\Node\API\api_calls\google_wrapper.js">
           <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
@@ -148,11 +148,11 @@
           <line num="23" count="9" type="stmt"/>
           <line num="28" count="9" type="stmt"/>
           <line num="40" count="9" type="stmt"/>
-          <line num="42" count="9" type="cond" truecount="1" falsecount="1"/>
+          <line num="42" count="8" type="cond" truecount="1" falsecount="1"/>
           <line num="43" count="0" type="stmt"/>
-          <line num="44" count="9" type="cond" truecount="2" falsecount="0"/>
-          <line num="46" count="2" type="stmt"/>
-          <line num="49" count="7" type="stmt"/>
+          <line num="44" count="8" type="cond" truecount="2" falsecount="0"/>
+          <line num="46" count="3" type="stmt"/>
+          <line num="49" count="5" type="stmt"/>
         </file>
       </package>
     </metrics>

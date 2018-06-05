@@ -27,9 +27,17 @@ function analyze_request(image_uri, company)
 		
 		request(options, function(err, response)
 			{
-			if(err)
+			/*if(err)
 				{
 				return reject({error: {statusCode: 404, message: "could not connect to server."}});
+				}
+			else
+				{
+				return resolve(response.body);
+				}*/
+			if(err)
+				{
+				return resolve(err);
 				}
 			else
 				{
@@ -39,12 +47,12 @@ function analyze_request(image_uri, company)
 		
 		});
 	}
-/*
+
 console.log("==========================")
-analyze_request(img[0], "microsoft").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
-analyze_request(img[0], "google").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
+analyze_request(img[1], "microsoft").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
+/*analyze_request(img[0], "google").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
 analyze_request(img[0], "amazon").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log(err);});
-*/
+
 /*
 console.log("==========================")
 analyze_request(img[1], "ms").then((res) => {console.dir(res, {depth: 2, colors: true});}).catch((err)=>{console.log("ms WHY");});
