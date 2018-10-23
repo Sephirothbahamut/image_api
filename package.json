@@ -16,7 +16,8 @@
     "install": "^0.10.4",
     "jest": "^23.0.0",
     "microsoft-computer-vision": "^0.3.3",
-    "npm": "^5.7.1",
+    "mongodb": "^3.1.1",
+    "npm": "^5.10.0",
     "request": "^2.83.0"
   },
   "jest": {

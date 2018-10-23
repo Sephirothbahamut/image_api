@@ -10,10 +10,10 @@ app.use(express.json({limit: '10mb'}));
 //pages modules/db/db
 
 //==================== Server ====================
-
-app.post("/api/image", function(req, res)
+	
+app.post("/api/face", function(req, res)
 	{
-	var api_controller = require(__dirname + "/api/image/controller.js");
+	var api_controller = require(__dirname + "/api/face/controller.js");
 	api_controller(req, res);
 	});
 	

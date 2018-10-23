@@ -1,12 +1,18 @@
 {
-"ms_vision": "39f603f96e3044b09890d903beddaba8",
-"aws_rekognition": "b395bfa14739479b8b8349a50e90c235",
-"google_vision": "AIzaSyADJekxbZXMvniPuois0ygsQelwtR5vTZM",
+"base_url": "https://westcentralus.api.cognitive.microsoft.com",
+"ms_vision": "8fee5955d2104c6b9a8296a6db8f22cb",
+"ms_face": "a1b337dd774547e491c3ea01701a84f5",
 "unused_keys":
 	{
 	"ms_vision":
 		[
-		"260c1b79206341648ac0f67bad147698"
+		"8fee5955d2104c6b9a8296a6db8f22cb",
+		"55cf222f116642a9950420ea64362bd3"
+		],
+	"ms_face":
+		[
+		"a1b337dd774547e491c3ea01701a84f5",
+		"ee967d2b164c42dba20d6cc669fbc970"
 		]
 	}
 }
