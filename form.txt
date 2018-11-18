@@ -1,0 +1,173 @@
+    [
+    'https: //cdn.arstechnica.net/wp-content/uploads/2017/06/star-wars-force-awakens-han-solo-chewbacca-800x400.jpg',
+    'https: //cdn.20m.es/img2/recortes/2018/04/27/688990-600-338.jpg?v=20180626191758',
+    'https: //uproxx.files.wordpress.com/2018/07/indiana-jones-5-delayed-2021-jpg.jpeg?quality=95&w=650',
+    'https: //vignette.wikia.nocookie.net/lotr/images/7/75/MV5BMTc2NjQ1MDExOV5BMl5BanBnXkFtZTgwNTYzNDM2MzE%40._V1_SX1784_SY876_.jpg/revision/latest?cb=20150413145849&path-prefix=de',
+    'https: //i.redd.it/ub7q6cblk97z.jpg',
+    'https: //cinefreaks.gr/wp-content/uploads/2017/12/gandalfspeaks_v2_727.jpg',
+    'https: //www.rollingstone.it/wp-content/uploads/2016/01/ddd-e1453994878212.jpg',
+    'https: //images.hellogiggles.com/uploads/2017/12/17022221/picture-of-lotr-gandalf-photo.jpg',
+    'https: //middle-earth.xenite.org/files/2011/09/gandalf-shire-01.jpg'
+    ]
+
+    {
+    images: 
+        [
+        
+            {
+            url: 'https: //cdn.arstechnica.net/wp-content/uploads/2017/06/star-wars-force-awakens-han-solo-chewbacca-800x400.jpg',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                Array
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //cdn.20m.es/img2/recortes/2018/04/27/688990-600-338.jpg?v=20180626191758',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                Array
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //uproxx.files.wordpress.com/2018/07/indiana-jones-5-delayed-2021-jpg.jpeg?quality=95&w=650',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                Array
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //vignette.wikia.nocookie.net/lotr/images/7/75/MV5BMTc2NjQ1MDExOV5BMl5BanBnXkFtZTgwNTYzNDM2MzE%40._V1_SX1784_SY876_.jpg/revision/latest?cb=20150413145849&path-prefix=de',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                Array
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //i.redd.it/ub7q6cblk97z.jpg',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //cinefreaks.gr/wp-content/uploads/2017/12/gandalfspeaks_v2_727.jpg',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //www.rollingstone.it/wp-content/uploads/2016/01/ddd-e1453994878212.jpg',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //images.hellogiggles.com/uploads/2017/12/17022221/picture-of-lotr-gandalf-photo.jpg',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                Array
+                ]
+            
+            }
+        ,
+        
+            {
+            url: 'https: //middle-earth.xenite.org/files/2011/09/gandalf-shire-01.jpg',
+            content: 
+                [
+                Object
+                ]
+            ,
+            faces: 
+                [
+                
+                ]
+            
+            }
+        
+        ]
+    ,
+    groups: 
+        {
+        groups: 
+            [
+            
+                [
+                Array
+                ]
+            
+            ]
+        ,
+        messyGroup: 
+            [
+            '217e2174-a815-4afc-9bf7-2bfe8b962639',
+            'e776ad50-5069-49ed-a9fe-d1e9fb944593',
+            '5fc36bc2-f67e-4dd7-bd3d-476b9f1285c9'
+            ]
+        
+        }
+    
+    }

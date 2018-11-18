@@ -63,10 +63,9 @@ function analyze_request(image_uri)
 		
 		});
 	}
-	
-console.log("==========================")
 
-analyze_request(img).then((res) => {console.dir(res, {depth: null, colors: true});}).catch((err)=>{console.log("ms WHY");});
+console.log("==========================")
+analyze_request(img).then((res) => {console.dir(res, {depth: null, colors: false});}).catch((err)=>{console.log("ms WHY");});
 
 /*
 console.log("==========================")

@@ -1,9 +1,18 @@
 const analyze = require(__dirname + "/analyze.js");
 
 var img = [];
-img[0] = "http://www.goaras.com/lol";
-img[1] = "http://1.bp.blogspot.com/-oJTKO9FKmIw/TaH7yRRR6GI/AAAAAAAAAFY/gUxgJLS7xy0/s1600/happy_people.jpg";
-img[2] = "http://ohtopten.com/wp-content/uploads/2016/01/2.jpg";
+//han solo
+img[0] = "https://cdn.arstechnica.net/wp-content/uploads/2017/06/star-wars-force-awakens-han-solo-chewbacca-800x400.jpg";
+//indiana jones
+img[1] = "https://cdn.20m.es/img2/recortes/2018/04/27/688990-600-338.jpg?v=20180626191758";
+img[2] = "https://uproxx.files.wordpress.com/2018/07/indiana-jones-5-delayed-2021-jpg.jpeg?quality=95&w=650";
+//gandalf
+img[3] = "https://vignette.wikia.nocookie.net/lotr/images/7/75/MV5BMTc2NjQ1MDExOV5BMl5BanBnXkFtZTgwNTYzNDM2MzE%40._V1_SX1784_SY876_.jpg/revision/latest?cb=20150413145849&path-prefix=de";
+img[4] = "https://i.redd.it/ub7q6cblk97z.jpg";
+img[5] = "https://cinefreaks.gr/wp-content/uploads/2017/12/gandalfspeaks_v2_727.jpg";
+img[6] = "https://www.rollingstone.it/wp-content/uploads/2016/01/ddd-e1453994878212.jpg";
+img[7] = "https://images.hellogiggles.com/uploads/2017/12/17022221/picture-of-lotr-gandalf-photo.jpg";
+img[8] = "https://middle-earth.xenite.org/files/2011/09/gandalf-shire-01.jpg";
 
 
 test("invalid call, invalid argument types", ()=>

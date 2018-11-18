@@ -1,4 +1,5 @@
-var ask_microsoft = require(__dirname + "/api_calls/microsoft.js").analyze_face;
+var ask_ms_picture = require(__dirname + "/api_calls/microsoft.js").analyze_image;
+var ask_ms_face = require(__dirname + "/api_calls/microsoft.js").analyze_face;
 var ask_ms_group =  require(__dirname + "/api_calls/microsoft.js").face_group;
 
 const toResultObject = (promise) => 
@@ -24,33 +25,42 @@ function analyze(img)
 				{
 				if(typeof img[i] !== "string")
 					{
-					reject({error: {statusCode: 400, message: "First argument must be a string or an array of strings."}});
+					reject({error: {statusCode: 400, message: "First argument must be an array of strings."}});
 					}
-				var argument = {image_uri: img[i]};
-				calls.push(ask_microsoft(argument));
+				calls.push(ask_ms_picture(img[i]));
+				calls.push(ask_ms_face(img[i]));
 				}
+				
 			Promise.all(calls.map(toResultObject))
 			.then((vals) =>
 				{
+				var pic_data = [];
 				var arr = [];
-				for(var v in vals)
+				for(var i in img)
 					{
-					if(!vals[v].error)
+					var content_index = (parseInt(i)*2).toString();
+					var faces_index = ((parseInt(i)*2)+1).toString();
+					if(!vals[content_index].error)
 						{
-						for(var f in vals[v].content)
+						pic_data.push({url: img[i], content: vals[content_index].content});
+						if(!vals[faces_index].error)
 							{
-							arr.push(vals[v].content[f].faceId);
+							pic_data[i].faces = vals[faces_index].content;
+							for(var f in vals[faces_index].content)
+								{
+								arr.push(vals[faces_index].content[f].faceId);
+								}
 							}
 						}
 					}
 				ask_ms_group(arr)
 				.then((groups) =>
 					{
-					return resolve({images: vals, groups: groups});
+					return resolve({images: pic_data, groups: groups.content});
 					})
 				.catch((err) =>
 					{
-					return reject({images: vals, error: err});
+					return reject(err);
 					});
 				})
 			.catch((err) => 
@@ -61,21 +71,9 @@ function analyze(img)
 				
 			
 			}
-		else if (typeof img === "string")
-			{
-			ask_microsoft({image_uri: img}).then((val) =>
-				{
-				console.log(val);
-				return resolve(val);
-				})
-			.catch((err) => 
-				{
-				return reject(err);
-				});
-			}
 		else
 			{
-			return reject({error: {statusCode: 400, message: "First argument must be a string or an array of strings."}});
+			return reject({error: {statusCode: 400, message: "First argument must be a an array of strings."}});
 			}
 		
 			

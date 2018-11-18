@@ -25,15 +25,15 @@ function microsoft_request(req_url, req_content, req_key)
 			{
 			if(err)
 				{
-				return reject({uri: req_content.url, error: {statusCode: 500, message: err}});
+				return reject({error: {statusCode: 500, message: err}});
 				}
 			else if(response.statusCode != 200)
 				{
-				return reject({uri: req_content.url, error: {statusCode: response.statusCode, message: response.body}});
+				return reject({error: {statusCode: response.statusCode, message: response.body}});
 				}
 			else
 				{
-				return resolve({uri: req_content.url, content: response.body});
+				return resolve({content: response.body});
 				}
 			});
 		});
@@ -41,7 +41,7 @@ function microsoft_request(req_url, req_content, req_key)
 
 
 //face
-module.exports.analyze_face = function(img)
+module.exports.analyze_face = function(image_uri)
 	{
 	//set request content
 	const url = "/face/v1.0/detect" + "?"
@@ -51,7 +51,7 @@ module.exports.analyze_face = function(img)
 
 	const content = 
 		{
-		"url": img.image_uri
+		"url": image_uri
 		};
 	
 	const key = keys.ms_face;
@@ -60,16 +60,16 @@ module.exports.analyze_face = function(img)
 	} 
 	
 //analyze
-module.exports.analyze_image = function (img)
+module.exports.analyze_image = function (image_uri)
 	{
 	const url = "/vision/v1.0/analyze" + "?"
-		+ "visualFeatures=Categories,Description,Tags,Faces" + "&"
+		+ "visualFeatures=Categories,Description,Tags" + "&"
 		+ "detauls=" + "&"
 		+ "language=en";
 
 	const content = 
 		{
-		"url": img.image_uri
+		"url": image_uri
 		};
 		
 	const key = keys.ms_vision;

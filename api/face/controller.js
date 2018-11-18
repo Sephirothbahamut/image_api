@@ -8,7 +8,6 @@ module.exports = function(req, res)
 	{
 	if((req.header("Content-Type") == "application/json" )&& req.body.image_uri)
 		{
-		
 		analyze(req.body.image_uri)
 		.then((result) =>
 			{
@@ -21,12 +20,11 @@ module.exports = function(req, res)
 			if(err.error)
 				{
 				res.writeHead(err.error.statusCode, {"Content-Type": "application/json"});
-				res.write(JSON.stringify(err));
+				res.write(JSON.stringify(err.error));
 				res.end();
 				}
 			else
 				{
-				console.log(err);
 				res.writeHead(500, {"Content-Type": "text"});
 				res.write("Internal server error.");
 				res.end();
@@ -36,7 +34,7 @@ module.exports = function(req, res)
 	else
 		{
 		res.writeHead(400, {"Content-Type": "text"});
-		res.write("Request must be a json with 'image_uri' as key; it can either be a single uri or an array.");
+		res.write("Request must be a json with 'image_uri' as key which contains an array of valid image uri.");
 		res.end();
 		}
 	return;

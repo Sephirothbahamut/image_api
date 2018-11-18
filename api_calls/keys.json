@@ -1,18 +1,5 @@
 {
-"base_url": "https://westcentralus.api.cognitive.microsoft.com",
-"ms_vision": "8fee5955d2104c6b9a8296a6db8f22cb",
-"ms_face": "a1b337dd774547e491c3ea01701a84f5",
-"unused_keys":
-	{
-	"ms_vision":
-		[
-		"8fee5955d2104c6b9a8296a6db8f22cb",
-		"55cf222f116642a9950420ea64362bd3"
-		],
-	"ms_face":
-		[
-		"a1b337dd774547e491c3ea01701a84f5",
-		"ee967d2b164c42dba20d6cc669fbc970"
-		]
-	}
+"base_url": "https://northeurope.api.cognitive.microsoft.com",
+"ms_vision": "13ce6353521849f3a2c39e380e7f0b07",
+"ms_face": "a58e64aa06804e8fbc1b7863dead8728"
 }
